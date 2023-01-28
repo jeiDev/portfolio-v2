@@ -1,0 +1,50 @@
+.container{
+    background-color: var(--bg);
+    height: 100vh;
+    width: 100vw;
+    padding: 69px;
+    display: flex;
+}
+
+.box{
+    background-color: var(--bg-primary);
+    flex: 1 1 auto ;
+    border-radius: 8px;
+    border: 1px solid var(--stroke);
+}
+
+.header{
+    display: flex;
+    border-bottom: 1px solid var(--stroke);
+}
+
+.boxNav{
+    flex: 1 1 auto ;
+}
+
+.title,
+.contactMe{
+    color: var(--color);
+    padding: 17.6px 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.title{
+    padding-right: 154px;
+    border-right: 1px solid var(--stroke);
+}
+
+.contactMe{
+    border-left: 1px solid var(--stroke);
+    cursor: pointer;
+}
+
+.contactMe:hover{
+    background: #607b963e;
+}
+
+.ulNav{
+    display: flex;
+}

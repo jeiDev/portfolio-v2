@@ -1,0 +1,19 @@
+.buttonBox{
+    padding: 17.6px 32px;
+    border-right: 1px solid var(--stroke);
+    transition: all ease .2s;
+    height: 100%;
+    align-items: center;
+}
+
+.buttonBox:hover{
+    background: #607b963e;
+}
+
+.buttonBoxActive{
+    border-bottom: 2px solid #FEA55F;
+}
+
+.button{
+    color: var(--color);
+}
