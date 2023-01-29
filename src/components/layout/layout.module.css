@@ -126,7 +126,7 @@
     top: 60px;
     right: 0;
     width: 400px;
-    height: calc(350px);
+    height: calc(100vh - 30px - 60px - 50px); /* 100vh - 30px padding - 60px header - 50px footer*/
     border-left: 1px solid var(--stroke);
     transition: all .5s ease-in-out;
     transform: translateX(400px);
@@ -137,6 +137,10 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .container{
+        padding: 15px;
+    }
+
     .mobileMenu{
         display: block;
     }
@@ -157,6 +161,16 @@
     }
 }
 
+@media only screen and (max-width: 600px) {
+    .mobileMenu{
+        width: 100%;
+        transform: translateX(100%);
+    }
+}
+
+.mobileMenuActive{
+    transform: translateX(0);
+}
 
 /**********************************************************************
 ** MAIN
