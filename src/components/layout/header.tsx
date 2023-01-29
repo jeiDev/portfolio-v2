@@ -6,6 +6,7 @@ import { settingNavs } from "@settings/nav.setting"
 import { HeaderPropsI } from "./layout.interface"
 
 import style from "./layout.module.css"
+import Link from "next/link"
 
 const Header = ({ title }: HeaderPropsI) => {
     const [showMenu, setShowMenu] = useState<boolean>(false)
@@ -40,6 +41,7 @@ const Header = ({ title }: HeaderPropsI) => {
                     <ul className={style.ulNav}>
                         {settingNavs.map((nav, i) => (
                             <LinkText href={nav.href} active={i == 0} key={i}>
+                                <nav.Icon className={style.iconMenu} />
                                 {nav.title}
                             </LinkText>
                         ))}
@@ -47,7 +49,9 @@ const Header = ({ title }: HeaderPropsI) => {
                 </div>
                 <div className={style.contactMeBox}>
                     <div className={style.contactMe}>
-                        <span>contact-me</span>
+                        <Link href="/contact-me">
+                            <span>contact-me</span>
+                        </Link>
                     </div>
                 </div>
                 {width <= 1024 && (
@@ -59,7 +63,7 @@ const Header = ({ title }: HeaderPropsI) => {
                         </div>
                         <div className={`${style.mobileMenu} ${showMenu ? style.mobileMenuActive : ""}` }>
                             <ul className={style.ulNavMobile}>
-                                {settingNavs.map((nav, i) => (
+                                {[...settingNavs, {href: "/contact-me", title: "contact-me"}].map((nav, i) => (
                                     <LinkText href={nav.href} active={i == 0} key={i}>
                                         {nav.title}
                                     </LinkText>
