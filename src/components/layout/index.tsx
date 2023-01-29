@@ -1,3 +1,4 @@
+import BgBlob from "@components/bg-blob"
 import React from "react"
 import Footer from "./footer"
 import Header from "./header"
@@ -9,6 +10,7 @@ const Layout = ({children, title}: LayoutPropsI) => {
 
     return (
         <div className={style.container}>
+            <BgBlob />
             <div className={style.box}>
                 <Header title={title}/>
                 <main className={style.main}>
