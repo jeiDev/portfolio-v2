@@ -21,3 +21,19 @@
 .buttonBoxActive>.button{
     color: var(--color-active);
 }
+
+@media only screen and (max-width: 1024px) {
+    .buttonBox{
+        border-right: none;
+        border-bottom: 1px solid var(--stroke);
+    }
+
+    .buttonBoxActive{
+        background-color: var(--color-active);
+    }
+
+    .buttonBoxActive>.button{
+        color: var(--bg-primary);
+        font-weight: bold;
+    }
+}
