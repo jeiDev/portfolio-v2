@@ -6,13 +6,13 @@ import { LayoutPropsI } from "./layout.interface"
 
 import style from "./layout.module.css"
 
-const Layout = ({children, title}: LayoutPropsI) => {
+const Layout = ({children, title, activeMenu}: LayoutPropsI) => {
 
     return (
         <div className={style.container}>
             <BgBlob />
             <div className={style.box}>
-                <Header title={title}/>
+                <Header title={title} activeMenu={activeMenu}/>
                 <main className={style.main}>
                     {children}
                 </main>
