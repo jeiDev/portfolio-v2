@@ -11,7 +11,7 @@ const Layout = ({children, title}: LayoutPropsI) => {
         <div className={style.container}>
             <div className={style.box}>
                 <Header title={title}/>
-                <main>
+                <main className={style.main}>
                     {children}
                 </main>
                 <Footer />
