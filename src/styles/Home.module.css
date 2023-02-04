@@ -2,6 +2,8 @@
     padding: 0 263px;
     display: flex;
     height: 100%;
+    width: 100%;
+    display: flex;
 }
 
 .box {
@@ -15,7 +17,7 @@
     align-items: inherit;
     justify-content: center;
     color: white;
-    padding-right: 60px;
+    flex: 1 1 auto;
 }
 
 .greeting {
