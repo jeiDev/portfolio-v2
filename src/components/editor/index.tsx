@@ -1,13 +1,24 @@
-const Editor = () => {
+import React from "react"
+import CommentaryEditorShow from "./commentary"
+import { EditorShowPropsI } from "./editor.interface"
+import VariableEditorShow from "./variable"
 
+const EditorShow = ({ items }: EditorShowPropsI) => {
     return (
         <code>
-            // complete the game to continue
-            // you can also see it on my Github page
-            
-            const githubLink = “https://github.com/example/url”
+            {items.map((item, i) => {
+                if(item.indexOf("//") === 0){
+                    return <CommentaryEditorShow>{item}</CommentaryEditorShow>
+                }else if(item.indexOf("const ") === 0 || item.indexOf("let ") === 0 || item.indexOf("var ") === 0){
+                    return <VariableEditorShow>{item}</VariableEditorShow>
+                }
+
+                console.warn("error code:", item)
+
+                return null
+            })}
         </code>
     )
 }
 
-export default Editor
+export default EditorShow

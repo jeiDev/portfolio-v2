@@ -1,11 +1,39 @@
-.container{
+.container {
     padding: 0 263px;
     display: flex;
     height: 100%;
 }
 
-.box{
+.box {
     height: 100%;
     display: flex;
     align-items: center;
+}
+
+.boxInfo {
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: center;
+    color: white;
+    padding-right: 60px;
+}
+
+.greeting {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.name {
+    font-size: 3.3em;
+    font-weight: 400;
+}
+
+.workPosition {
+    font-size: 1.3em;
+    color: #4D5BCE;
+    font-weight: 400;
+}
+
+.boxInfoEditor {
+    padding-top: 35px;
 }

@@ -1,0 +1,16 @@
+.commentary{
+    color: #607B96;
+    padding-bottom: 8px;
+}
+
+.typeVar{
+    color: #4D5BCE;
+}
+
+.nameVar{
+    color: #43D9AD;
+}
+
+.valueVar{
+    color: #E99287;
+}
