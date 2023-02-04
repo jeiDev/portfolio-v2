@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    width: 22px;
+    height: 22px;
+    background: radial-gradient(73.08% 73.08% at 50% 26.92%, #196C6A 15.1%, #114B4A 100%);
+    box-shadow: 2px 2px 4px #0D4341, inset 0px 1px 2px #1A8277;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #051d1b;
+}

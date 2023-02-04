@@ -1,0 +1,80 @@
+.container{
+    width: 700px;
+    height: 80%;
+    padding: 50px;
+    max-width: 610px;
+}
+
+.box{
+    background: linear-gradient(150.26deg, rgba(23, 85, 83, 0.7) 1.7%, rgba(67, 217, 173, 0.091) 81.82%);
+    border: 1px solid #0C1616;
+    box-shadow: inset 0px 2px 0px rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(32px);
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding: 12.08px 12.73px;
+}
+
+.main{
+    flex: 1 1 auto;
+    display: flex;
+    padding: 0 25px;
+}
+
+.main>div{
+    flex: 1 1 auto;
+}
+
+.boxPlay{
+    background: rgba(1, 22, 39, 0.84);
+    box-shadow: inset 1px 5px 11px rgba(2, 18, 27, 0.71);
+    border-radius: 8px;
+    min-width: 200px;
+}
+
+.boxControl{
+    padding-left: 24.31px;
+}
+
+.boxControlExample{
+    background: rgba(1, 20, 35, 0.19);
+    border-radius: 8px;
+    padding: 12.54px 13.19px;
+    margin-bottom: 15px;
+}
+
+.contentControl{
+    padding-top: 20px;
+}
+
+.contentControl>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentControl>div:first-child{
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.containerFood{
+    padding: 12.54px 13.19px;
+}
+
+.boxFood{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding-top: 15px;
+}
+
+.food{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #43D9AD;
+    box-shadow: 0px 0px 6px #43d9ad;
+}

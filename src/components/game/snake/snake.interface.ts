@@ -1,0 +1,1 @@
+export type DrawButtonControlType = "left" | "up" | "down" | "right"

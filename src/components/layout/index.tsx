@@ -14,7 +14,10 @@ const Layout = ({children, title, activeMenu}: LayoutPropsI) => {
             <div className={style.box}>
                 <Header title={title} activeMenu={activeMenu}/>
                 <main className={style.main}>
-                    {children}
+                    <div className={style.mainBlur}></div>
+                    <div className={style.mainContain}>
+                        {children}
+                    </div>
                 </main>
                 <Footer />
             </div>
